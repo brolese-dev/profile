@@ -551,6 +551,10 @@ video {
   }
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -637,6 +641,10 @@ video {
   padding: 1rem;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 *{
   --tw-shadow: 0 0 #0000;
 }
@@ -663,6 +671,20 @@ video {
 .text-primary{
   --tw-text-opacity: 1;
   color: rgba(15, 76, 129, var(--tw-text-opacity));
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select-text{
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 .w-6{
