@@ -4,3 +4,6 @@
 @tailwind components; 
 @tailwind utilities;
 
+.dark img {
+    filter: brightness(90%);
+}

@@ -3,7 +3,9 @@ var { Liquid } = require('liquidjs')
 const path = require('path')
 
 const app = express()
-var engine = new Liquid()
+var engine = new Liquid({
+  // cache: true
+})
 
 app.engine('liquid', engine.express())
 app.set('views', './views')

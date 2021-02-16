@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:css": "postcss resources/styles/style.css -o public/styles/style.css"
+    "tailwind:css": "npx tailwindcss-cli@latest build resources/styles/style.css -o public/styles/style.css",
+    "tailwind:css:prod": "NODE_ENV=production npx tailwindcss-cli@latest build resources/styles/style.css -o public/styles/style.css"
   },
   "repository": {
     "type": "git",

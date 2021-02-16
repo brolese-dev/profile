@@ -1,8 +1,9 @@
 module.exports = {
   purge: [
     './views/**/*.liquid',
+    './resources/**/*.css',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -14,7 +15,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow: ['dark']
+    },
   },
   plugins: [],
 }
