@@ -4,7 +4,14 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'serif': ['lato', 'sans-serif'],
+      },
+      colors: {
+        primary: '#0F4C81'
+      }
+    },
   },
   variants: {
     extend: {},
